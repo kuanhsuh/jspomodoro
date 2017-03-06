@@ -8,3 +8,4 @@
 - Progress Bar
 
 ## Video Walkthrough
+![](https://github.com/kuanhsuh/jspomodoro/blob/master/pomo.gif)
