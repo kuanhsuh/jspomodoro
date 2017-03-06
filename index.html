@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FreeCodeCamp Pomodoro Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Freecode Camp</h1>
+        <h3 class="text-center">Pomodoro Clock</h3>
+
+        <div class="panel panel-primary text-center">
+                <div>
+                    <h4>Break Length</h4> <br />
+                    <button onclick="handlers.addBreakTime()" class="btn btn-info btn-md">+</button>
+                    <span id="break"></span>
+                    <button onclick="handlers.minusBreakTime()" class="btn btn-info btn-md">-</button>
+                </div>
+                <div>
+                    <h4>Session Length</h4> <br />
+                    <button onclick="handlers.addSessionTime()" class="btn btn-info btn-md">+</button>
+                    <span id="session"></span>
+                    <button onclick="handlers.minusSessionTime()" class="btn btn-info btn-md">-</button>
+                </div>
+                <br>
+                <button onclick="handlers.pause()"class="btn-lg btn btn-danger">Pause</button>
+                <button onclick="handlers.reset()"class="btn-lg btn btn-Warning">Reset</button>
+                <button onclick="handlers.startPomodoro()"class="btn-lg btn btn-success">Start</button><br>
+                <button onclick="pomodoro.changeSpeed()"class="btn-sm btn btn-info">10X(Demo Purpose)</button>
+
+        </div>   <!-- panel -->
+        <div class="text-center">
+            <h1>Remaining Time</h1>
+            <h1 id="time"></h1>
+            <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="40"
+          aria-valuemin="0" aria-valuemax="100">
+          </div>
+</div>
+        </div>
+    </div> <!-- container -->
+    <script src="script1.js" charset="utf-8"></script>
+
+</body>
+
+</html>
