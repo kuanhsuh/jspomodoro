@@ -3,6 +3,7 @@
 - [ ] I can reset the clock for my next pomodoro.
 - [ ] I can customize the length of each pomodoro.
 
+codepen link [http://codepen.io/dannyhuang/pen/GWjRYW](http://codepen.io/dannyhuang/pen/GWjRYW)
 
 ## Extra Feature
 - Progress Bar
