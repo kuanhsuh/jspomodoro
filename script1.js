@@ -19,21 +19,20 @@ var pomodoro = {
         countdown = setInterval(function() {
             if (!self.isPaused) {
                 self.time[current].duration--;
-
-                view.displayTimerTime(current)
-                view.displayTimerProgress(current)
+                view.displayTimerTime(current);
+                view.displayTimerProgress(current);
             }
             if (self.time[current].duration <= 0) {
                 self.currentTime = (self.currentTime + 1);
                 if (self.currentTime === 2) {
                     clearInterval(countdown);
-                    alert("Break time is over, please restart pomodoro")
+                    alert("Break time is over, please restart pomodoro");
                     self.reset();
                     view.displayTimerTime(0);
                     return;
                 } else {
                     clearInterval(countdown);
-                    alert("Work Time Up, start break time")
+                    alert("Work Time Up, start break time");
                     self.timer(self.currentTime);
                 }
             }

@@ -4,11 +4,7 @@
 - [ ] I can customize the length of each pomodoro.
 
 
-## Bugs to fix
-- [ ] Switch from SessionTime to breakTime
-- [X] Pause handlers
-- [X] Reset Handler
-- [X] Background img
-- [X] Progress Bar
-- [X] Beep Sound
-- [ ] Ask Switch session quesetion
+## Extra Feature
+- Progress Bar
+
+## Video Walkthrough
